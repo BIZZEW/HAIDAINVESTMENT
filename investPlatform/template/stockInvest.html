@@ -1,0 +1,73 @@
+<!--Author: ZHUHY-->
+<!--Author: JINXY-->
+
+<div id="sectionStockBanner" class="widthControl sectionBanner">
+	<div class="naughtyEleWrap">
+		<img class="pageBanner" src="images/stockBanner.jpg" />
+	</div>
+</div>
+<div class="section">
+	
+	<div id="sectionStock project" class="sectionWControl">
+		<div class="sectionTitle textA">项目优选</div>	
+		<div class="sectionStock" ng-controller="stockEleCtrl" >
+					<div ng-repeat="obj in projects">
+						<div id="sectionStockEle" class="sectionStockEle above">
+							<div class="naughtyEleWrap">
+							<img class="sectionStockElePic " ng-src="{{obj.img}}" />
+							</div>
+							<div class="sectionStockETitle textC">{{obj.title}}</div>
+							<div class="sectionStockEIntro textD">{{obj.intro}}</div>
+							<div class="sectionStockEInvester textD">{{obj.invester}}</div>
+							<div class="sectionStockEMember textD">{{obj.member}}</div>
+						</div>
+					</div>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="moreButton textC" id="moreProject">
+			更多项目
+		</div>
+	</div>
+</div>
+<!------人才优选----------->
+<!--Author: JXY-->
+<div id="sectionBrain" class="sectionWControl">
+	<div class="sectionTitle textA">人才优选</div>
+			<div class="sectionBrain" ng-controller="brainCtrl" >
+					<div ng-repeat="obj in talents">
+						<div id="sectionBrainEle1" class="sectionBrainEle above first">
+							<img class="sectionBrainElePic" ng-src="{{obj.img}}" />
+							<div class="sectionBrainEleName textB">{{obj.name}}</div>
+							<div class="sectionBrainEleOccup textC">{{obj.group}}</div>
+						</div>
+					</div>
+			</div>
+		<div style="clear: both;"></div>
+	<div class="moreButton textC" id="moreBrain">
+		更多人才
+	</div>
+</div>
+<!------投资人优选-------->
+<!--Author: JXY-->
+<div class="section" style="margin-bottom: 20px;">
+	<div id="sectionInvester" class="sectionWControl">
+		<div class="sectionTitle textA">投资人优选</div>
+		<div class="sectionInvester" ng-controller="investerCtrl" >
+			<div ng-repeat="obj in records">
+				<div id="sectionInvesterEle1" class="sectionInvesterEle abovee">
+					<img ng-src="{{obj.img}}">
+					<div class="sectionInvesterDetail">
+						<div class="sectionInvesterDName textB">{{obj.name}}</div>
+						<div class="sectionInvesterDCorp textD">{{obj.group}}</div>
+						<div class="sectionInvesterDPosi textD">{{obj.person}}</div>
+						<p class="sectionInvesterDGenre textE">{{obj.inter}}</p>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="moreButton textC" id="moreInvester" style="clear: both;">
+			更多投资人
+		</div>
+	</div>
+</div>

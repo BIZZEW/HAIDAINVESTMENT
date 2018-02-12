@@ -1,0 +1,543 @@
+/*main:sectionCompetition,sectionStock,sectionResource,sectionDistrict
+Author: ZHUHY*/
+
+.pogoSlider-slide {
+	transition: all .25s ease-out;
+}
+
+.pogoSlider-slide:hover {
+	transform: scale(1.01);
+}
+
+.pageBanner {
+	width: 100%;
+	height: 100%;
+	transition: all .25s ease-out;
+}
+
+.pageBanner:hover {
+	transform: scale(1.014);
+}
+
+.sectionWControl {
+	width: 1180px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	clear:both;
+	overflow:hidden;
+}
+
+.section {
+	background-color: white;
+}
+
+.sectionTitle {
+	color: #333333;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.sectionCompetitionEle {
+	width: 360px;
+	height: 310px;
+	float: left;
+	margin-right: 50px;
+	background-color: red;
+}
+
+.sectionCompetitionElePic {
+	width: 100%;
+	height: 260px;
+	background-color: grey;
+	transition: all .25s ease-out;
+}
+
+.sectionCompetitionElePic:hover {
+	transform: scale(1.04);
+}
+
+.sectionCompetitionEleState {
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 15px;
+}
+
+.sectionCompetitionEle.lastEle {
+	margin-right: 0px;
+	background-color: darkgray;
+}
+
+.sectionBanner {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.sectionStockEle {
+	width: 380px;
+	float: left;
+	margin:0 6.5px;
+	background-color: white;
+	border: 1px solid #DDDDDD;
+	padding: 7px;
+}
+
+.sectionStockEle.right {
+	margin-right: 0px;
+}
+
+.sectionStockEle.above {
+	margin-bottom: 20px;
+}
+
+.naughtyEleWrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+.sectionStockElePic {
+	width: 100%;
+	height: 100%;
+	max-height: 150px;
+	transition: all .25s ease-out;
+}
+
+.sectionStockElePic:hover {
+	transform: scale(1.04);
+}
+
+.sectionStockETitle {
+	color: #333333;
+	margin-top: 15px;
+}
+
+.sectionStockEIntro {
+	color: #666666;
+	margin-top: 10px;
+	max-height: 20px;
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+}
+
+.sectionStockEInvester {
+	color: #666666;
+	margin-top: 30px;
+}
+
+.sectionStockEMember {
+	color: #666666;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.moreButton {
+	height: 50px;
+	line-height: 50px;
+	width: 200px;
+	border: 1px solid #dddddd;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	text-align: center;
+	color: #666666;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.moreButton:hover {
+	background-color: lightgrey;
+}
+
+.moreButton:active {
+	background-color: darkgray;
+	color: #333333;
+}
+
+.sectionDistrictTablist {
+	display: none;
+}
+
+.sectionDistrictSub {
+	width: 570px;
+	float: left;
+}
+
+.sectionDistrictSub.left {
+	margin-right: 40px;
+}
+
+.sectionDistrictSubTitle {
+	color: #333333;
+	border-bottom: 5px solid #666666;
+	float: left;
+	height: 37px;
+	line-height: 37px;
+}
+
+.sectionDistrictSubMore {
+	color: #666666;
+	float: right;
+	height: 37px;
+	line-height: 37px;
+	cursor: pointer;
+}
+
+.sectionDistrictSubMore:hover {
+	color: #333333;
+}
+
+.sectionDistrictLItem {
+	height: 16px;
+	max-width: 70%;
+	overflow: hidden;
+	line-height: 16px;
+	color: #333333;
+	margin-bottom: 18px;
+}
+
+.sectionDistrictLItem.first {
+	margin-top: 15px;
+}
+
+.sectionDistrictLItem.last {
+	margin-bottom: 0px;
+}
+
+.sectionDistrictLItem.title {
+	float: left;
+}
+
+.sectionDistrictLItem.date {
+	float: right;
+}
+
+.sectionDistrictREle {
+	width: 100%;
+	height: 150px;
+	margin-top: 20px;
+}
+
+.sectionDistrictREle.above {
+	margin-top: 15px;
+}
+
+.sectionDistrictRPic {
+	float: left;
+	height: 100%;
+	width: auto;
+}
+
+.sectionDistrictRDetail {
+	float: right;
+	width: 250px;
+}
+
+.sectionDistrictRDTitle {
+	color: #333333;
+}
+
+.sectionDistrictRDAddress {
+	color: #666666;
+	margin-top: 15px;
+}
+
+.sectionDistrictRDTel {
+	color: #666666;
+	margin-top: 5px;
+}
+
+.sectionDistrictTablist {
+	width: 570px;
+	float: left;
+	margin-right: 40px;
+}
+
+
+/*stockInvest:sectionBrain,sectionInvester*/
+
+.sectionBrainEle {
+	height: 312px;
+	width: 235px;
+	float: left;
+	margin:0 30px;
+}
+
+.sectionBrainEle.fourth {
+	margin-right: 0px;
+}
+
+.sectionBrainEle.above {
+	margin-bottom: 20px;
+}
+
+.sectionBrainElePic {
+	height: 235px;
+	width: 235px;
+	margin-bottom: 20px;
+}
+
+.sectionBrainEleName {
+	margin-bottom: 10px;
+	text-align: center;
+	color: #333333;
+}
+
+.sectionBrainEleOccup {
+	text-align: center;
+	color: #333333;
+}
+
+.sectionInvesterEle {
+	float: left;
+	border: 1px solid #DDDDDD;
+	margin:0 6.5px;
+	width: 380px;
+	height: 140px;
+	background-color: white;
+	padding: 10px;
+}
+
+.sectionInvesterEle.lastt {
+	margin-right: 0px;
+}
+
+.sectionInvesterEle.abovee {
+	margin-bottom: 20px;
+}
+
+.sectionInvesterElePic {
+	height: 100%;
+	float: left;
+	/*margin-right: 20px;*/
+}
+
+.sectionInvesterDetail {
+	float: left;
+	width: 53%;
+	height: 100%;
+	position: relative;
+	padding-left: 15px;
+}
+
+.sectionInvesterDName {
+	max-height: 25px;
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+	color: #333333;
+	margin-bottom: 15px;
+}
+
+.sectionInvesterDCorp {
+	color: #333333;
+	margin-bottom: 5px;
+	max-width: 100%;
+	overflow: hidden;
+	max-height: 25px;
+}
+
+.sectionInvesterDPosi {
+	color: #333333;
+}
+
+.sectionInvesterDGenre {
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #1078CF;
+	color: white;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+}
+
+
+/*resourceService:sectionResource,sectionFacilitator,sectionEnterprise,sectionPartner*/
+
+.sectionResourceEle {
+	width: 220px;
+	height: 220px;
+	float: left;
+	margin:0 8px;
+	background-color: white;
+	border: 1px solid #DDDDDD;
+	padding-top: 40px;
+	/*padding-bottom: 40px;*/
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.sectionResourceWrap {
+	height: auto;
+	width: 100%;
+	transition: all .3s ease-out;
+}
+
+.sectionResourceWrap:hover {
+	zoom:1.05;
+}
+
+.sectionResourceEle.last {
+	margin-right: 0px;
+}
+
+.sectionResourceEle.above {
+	margin-bottom: 20px;
+}
+
+.sectionResourceElePic {
+	margin-bottom: 10px;
+}
+
+.sectionResourceEleTitle {
+	margin-bottom: 10px;
+	color: #666666;
+}
+
+.sectionResourceEleIntro {
+	color: #999999;
+	max-height: 20px;
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+}
+
+.sectionFacilitatorEle {
+	width: 360px;
+	height: 300px;
+	float: left;
+	margin-right: 50px;
+	background-color: darkgray;
+}
+
+.sectionFacilitatorEle.lastEle {
+	margin-right: 0px;
+}
+
+.sectionFacilitatorElePic {
+	width: 100%;
+	height: 300px;
+	background-color: grey;
+	transition: all .25s ease-out;
+}
+
+.sectionFacilitatorElePic:hover {
+	transform: scale(1.04);
+}
+
+.sectionEnterpriseEle {
+	width: 360px;
+	height: 300px;
+	float: left;
+	margin-right: 50px;
+	background-color: darkgray;
+}
+
+.sectionEnterpriseEle.lastEle {
+	margin-right: 0px;
+}
+
+.sectionEnterpriseElePic {
+	width: 100%;
+	height: 300px;
+	background-color: grey;
+	transition: all .25s ease-out;
+}
+
+.sectionEnterpriseElePic:hover {
+	transform: scale(1.04);
+}
+
+.sectionPartnerEle {
+	background-color: darkgray;
+	width: 280px;
+	height: 160px;
+	float: left;
+	margin-right: 20px;
+}
+
+.sectionPartnerEle.above {
+	margin-bottom: 20px;
+}
+
+.sectionPartnerEle.fourthe {
+	margin-right: 0px;
+}
+
+
+/*districtCommuni:sectionLand*/
+
+.sectionDistrictLWrap {
+	float: left;
+	width: 566px;
+}
+
+.sectionDistrictLWrap.left {
+	margin-right: 40px;
+}
+
+.sectionLandEle {
+	border: 1px solid #DDDDDD;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 320px;
+	background-color: white;
+	padding: 20px;
+}
+
+.sectionLandElePic {
+	float: left;
+	width: 52%;
+	height: 100%;
+	padding-right: 20px;
+}
+
+.sectionLandDetail {
+	float: left;
+	width: 48%;
+	height: 100%;
+	position: relative;
+}
+
+.sectionLandDTitle {
+	color: #333333;
+}
+
+.sectionLandDContent {
+	color: #666666;
+	margin-top: 30px;
+}
+
+.sectionLandDElse {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.LandDElse {
+	color: #666666;
+	float: left;
+}
+
+.LandDElse.Datee {
+	margin-right: 25px;
+}
+
+.LandDElse.Occupp {
+	margin-right: 25px;
+}
+
+.sectionLandDCheck {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}

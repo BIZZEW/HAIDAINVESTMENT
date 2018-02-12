@@ -1,0 +1,20 @@
+{
+	"investPlatform/homePage.html": {
+		"resources": [
+			"investPlatform/css/template.css",
+			"bower_components/angular-ui-router/release/angular-ui-router.min.js",
+			"investPlatform/images/logo.png",
+			"bower_components/angular-route/angular-route.min.js",
+			"investPlatform/css/simpScroller.css",
+			"bower_components/angular/angular.min.js",
+			"investPlatform/js/controller/homePageCtrl.js",
+			"bower_components/bootstrap/dist/css/bootstrap.min.css",
+			"investPlatform/js/main.js",
+			"investPlatform/css/homePage.css",
+			"investPlatform/js/jquery.pogo-slider.min.js",
+			"investPlatform/css/pogo-slider.min.css",
+			"bower_components/jquery/dist/jquery.min.js",
+			"investPlatform/js/html5.js"
+		]
+	}
+}

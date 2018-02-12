@@ -1,0 +1,1203 @@
+/*Author: ZHUHY*/
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: '微软雅黑', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	background: #eeeeee;
+}
+
+footer {
+	background-color: #666666;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.go-top {
+	width: 58px;
+	height: 58px;
+	margin: 8px 0 0;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid #ddd;
+	position: fixed;
+	right: 12px;
+	bottom: 50px;
+	cursor: pointer;
+	z-index: 99999;
+	display: none;
+}
+
+.hint {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	left: 14px;
+	top: 13px;
+	width: 32px;
+	height: 32px;
+	line-height: 16px;
+	font-size: 12px;
+	color: white;
+	font-weight: 600;
+	overflow: hidden;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	pointer-events: none;
+	z-index: 999999999;
+}
+
+.go-top:hover {
+	background-color: gray;
+}
+
+.footerText {
+	display: inline-block;
+	color: #ffffff;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+
+.footerBarcode {
+	color: #ffffff;
+	margin-top: 15px;
+	text-align: center;
+}
+
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+input[type="button"],
+input[type="submit"] {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+}
+
+label {
+	margin: 0;
+}
+
+.textA {
+	font-size: 1.500em;
+	/*24px:sectionTitle*/
+}
+
+.textB {
+	font-size: 1.125em;
+	/*18px:sectionDistrictSubTitle&sectionBrainEleName&sectionInvesterDName&sectionResourceEleTitle&sectionLandDTitle*/
+}
+
+.textC {
+	font-size: 1.000em;
+	/*16px:NAVIa&headerLogin&footerBarcode&sectionCompetitionEleState&sectionStockETitle&moreButton&sectionDistrictLItem&sectionDistrictTabLabel&sectionDistrictRDTitle&footerText&sectionBrainELeOccup&sectionLandDcontent*/
+}
+
+.textD {
+	font-size: 0.875em;
+	/*14px:sectionStockEIntro&sectionStockEInvester&sectionStockEMember&sectionInvesterDCorp&sectionInvesterDposi&sectionResourceEleIntro&LandDElse*/
+}
+
+.textE {
+	font-size: 0.75em;
+	/*12px:sectionDistrictSubMore&sectionDistrictRDAddress&sectionDistrictRDTel&sectionInvesterDGenre*/
+}
+
+
+/*-----start-header----*/
+
+.header {
+	background: #fff;
+	height: 80px;
+	width: 100%;
+}
+
+.widthControl {
+	width: 1180px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.headerCtrl {
+	height: 80px;
+	position: relative;
+}
+
+.headerCover {
+	height: 80px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	line-height: 80px;
+}
+
+.logo {
+	float: left;
+	height: 100%;
+	width: auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.headerLogin {
+	font-weight: 500;
+	position: absolute;
+	right: 0px;
+	text-decoration: none;
+	color: #666666;
+	text-transform: uppercase;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.headerLogin:hover {
+	color: #333333;
+}
+
+.header-right {
+	margin-left: 300px;
+	position: absolute;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+.top-menu {
+	height: 100%;
+	margin-top: 0px;
+	position: relative;
+}
+
+.top-menu ul {
+	position: absolute;
+	bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.top-menu ul li {
+	display: inline-block;
+	margin: 0em 2em 0em;
+}
+
+.top-menu ul li a {
+	text-decoration: none;
+	color: #666666;
+	font-weight: 700;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 5px solid transparent;
+	display: block;
+}
+
+.top-menu ul li a.active {
+	border-bottom: 5px solid #666666;
+	color: #333333;
+}
+
+.top-menu ul li a:hover {
+	border-bottom: 5px solid #666666;
+	color: #333333;
+}
+
+.homePageContent {
+	min-height: 1000px;
+	/*pending*/
+}
+
+
+/*-- responsive-design starts-here --*/
+
+
+/*PC Screen*/
+
+@media screen and (max-width: 2560px) {
+	.textA {
+		font-size: 1.500em;
+	}
+	.textB {
+		font-size: 1.125em;
+	}
+	.textC {
+		font-size: 1.000em;
+	}
+	.textD {
+		font-size: 0.875em;
+	}
+	.textE {
+		font-size: 0.75em;
+	}
+	.sectionInvesterEle.abovee img {
+		float: left;
+	}
+}
+
+
+/*Pad Screen*/
+
+@media screen and (max-width: 1200px) {
+	.textA {
+		font-size: 1.500em;
+	}
+	.textB {
+		font-size: 1.125em;
+	}
+	.textC {
+		font-size: 1.000em;
+	}
+	.textD {
+		font-size: 0.875em;
+	}
+	.textE {
+		font-size: 0.75em;
+	}
+	/*homePage:header&section&footer*/
+	.header {
+		height: 50px;
+		padding: 0 0;
+		border-bottom: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		box-shadow: 0px 1px 5px #666666;
+	}
+	.headerCtrl {
+		height: 50px;
+	}
+	.headerCover {
+		height: 50px;
+		width: 100%;
+		line-height: 40px;
+		padding: 5px 0;
+	}
+	.logo {
+		position: relative;
+		height: 100%;
+		margin-left: 4%;
+	}
+	.headerLogin {
+		right: 4%;
+	}
+	.header-right {
+		margin-left: 25%;
+	}
+	.top-menu ul li {
+		margin: 0em 0.7em 0em;
+	}
+	.top-menu ul li a {
+		font-weight: 600;
+		padding-bottom: 9px;
+		border-bottom: 4px solid transparent;
+	}
+	.top-menu ul li a.active {
+		border-bottom: 4px solid #666666;
+	}
+	.top-menu ul li a:hover {
+		border-bottom: 4px solid #666666;
+	}
+	.widthControl {
+		position: relative;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.homePageContent {
+		margin-top: 50px;
+	}
+	.sectionWControl {
+		text-align: center;
+		width: 100%;
+	}
+	.widthControl.footerCtrl {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	/*main:sectionCompetition&sectionStock&sectionResource&sectionDistrict*/
+	#sectionStockClear,
+	#sectionStockClearSecond,
+	#sectionInvesterClear,
+	#sectionResourceClear {
+		display: none;
+	}
+	{
+		display: none;
+	}
+	.pogoSlider {
+		height: 250px;
+	}
+	.sectionCompetitionEle {
+		width: 28%;
+		margin-left: 4%;
+		margin-right: 0;
+		margin-bottom: 15px;
+		height: 90%;
+	}
+	.sectionCompetitionElePic {
+		height: auto;
+	}
+	.sectionCompetitionEleState {
+		color: white;
+		text-align: center;
+		line-height: 35px;
+		margin-top: 0px;
+	}
+	.sectionStockEle {
+		width: 44%;
+		margin-left: 4%;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.sectionStockEle.above {
+		margin-bottom: 15px;
+	}
+	.sectionStockElePic {
+		height: auto;
+		max-height: 250px;
+	}
+	.sectionStockETitle {
+		text-align: left;
+	}
+	.sectionStockEIntro {
+		text-align: left;
+	}
+	.sectionStockEInvester {
+		text-align: left;
+	}
+	.sectionStockEMember {
+		text-align: left;
+	}
+	.sectionResourceEle {
+		width: 41%;
+		margin-left: 6%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+		background-position: center;
+	}
+	.sectionResourceEle.above {
+		margin-bottom: 15px;
+	}
+	.sectionDistrictSub {
+		width: 44%;
+		margin-left: 4%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.sectionDistrictSub.left {
+		margin-right: 0px;
+	}
+	.sectionDistrictRWrap {
+		max-height: 337px;
+		overflow: scroll;
+	}
+	.sectionDistrictLWrap {
+		width: 80%;
+		margin-left: 10%;
+	}
+	.sectionDistrictLWrap.left {
+		margin-right: 0px;
+	}
+	.sectionDistrictLItem {
+		height: 16px;
+		line-height: 16px;
+		color: #333333;
+		margin-bottom: 18px;
+		text-align: left;
+	}
+	.sectionDistrictLItem.title {
+		float: left;
+		width: 70%;
+	}
+	.sectionDistrictLItem.date {
+		float: left;
+		width: 30%;
+		text-align: right;
+	}
+	.sectionDistrictREle {
+		width: 100%;
+		height: auto;
+		float: left;
+		margin-top: 20px;
+	}
+	.sectionDistrictRPic {
+		width: 100%;
+		height: auto;
+	}
+	.sectionDistrictRDetail {
+		float: left;
+		width: 100%;
+		text-align: left;
+	}
+	.sectionBrainEle {
+		height: 60%;
+		width: 20%;
+		float: left;
+		margin-left: 4%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+		padding: 1%;
+	}
+	.sectionBrainElePic {
+		height: auto;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.sectionInvesterEle {
+		margin-left: 4%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+		width: 44%;
+		text-align: left;
+	}
+	.sectionInvesterEle.abovee {
+		margin-bottom: 15px;
+	}
+	.sectionInvesterEle.abovee img {
+		float: left;
+	}
+	.sectionResourceEle {
+		width: 16.4%;
+		height: 30%;
+		margin-left: 3%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.sectionResourceEle.above {
+		margin-bottom: 15px;
+	}
+	.sectionResourceWrap:hover {
+		zoom: 1.00;
+	}
+	.sectionResourceElePic {
+		margin-bottom: 10px;
+	}
+	.sectionFacilitatorEle {
+		width: 28%;
+		height: auto;
+		margin-left: 4%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.sectionFacilitatorElePic {
+		height: auto;
+	}
+	.sectionEnterpriseEle {
+		width: 28%;
+		height: auto;
+		margin-left: 4%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.sectionEnterpriseElePic {
+		height: auto;
+	}
+	.sectionPartnerEle {
+		width: 20%;
+		height: 200px;
+		margin-left: 4%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.sectionPartnerEle.above {
+		margin-bottom: 15px;
+	}
+	.sectionLandEle {
+		border: 1px solid #DDDDDD;
+		margin-left: 4%;
+		margin-right: 0px;
+		margin-bottom: 20px;
+		width: 92%;
+		height: 280px;
+		padding: 10px;
+	}
+	.picLandWrap {
+		float: left;
+		width: 52%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.sectionLandElePic {
+		padding-right: 10px;
+		width: auto;
+		height: 100%;
+	}
+	.sectionLandDetail {
+		text-align: left;
+		height: 100%;
+		padding-left: 10px;
+	}
+	.sectionLandDContent {
+		color: #666666;
+		margin-top: 5px;
+		max-height: 80px;
+		overflow: auto;
+	}
+	.sectionLandDElse {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		padding-left: 10px;
+	}
+	.LandDElse {
+		color: #666666;
+		float: left;
+	}
+	.LandDElse.Datee {
+		margin-right: 0px;
+		float: none;
+	}
+	.LandDElse.Occupp {
+		margin-right: 0px;
+		float: none;
+	}
+	.LandDElse.ItemView {
+		float: none;
+	}
+	.sectionLandDCheck {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+	}
+}
+
+@media screen and (max-width:750px) {
+	/*districtCommuni:sectionLand*/
+	.sectionInvesterDetail {
+		max-width: 155px;
+		overflow: auto;
+	}
+	.sectionLandEle {
+		border: 1px solid #DDDDDD;
+		margin-right: auto;
+		margin-left: auto;
+		width: 80%;
+		margin-left: 10%;
+		height: auto;
+		background-color: white;
+		padding: 10px;
+	}
+	.picLandWrap {
+		width: 100%;
+		height: auto;
+	}
+	.sectionLandElePic {
+		float: left;
+		width: 100%;
+		height: auto;
+		padding-right: 0px;
+		margin-bottom: 5px;
+	}
+	.sectionLandDetail {
+		float: left;
+		width: 100%;
+		height: 50%;
+		position: relative;
+		text-align: left;
+		padding-left: 0px;
+	}
+	.sectionLandDTitle {
+		color: #333333;
+	}
+	.sectionLandDContent {
+		color: #666666;
+		margin-top: 5px;
+		max-height: 200px;
+		overflow: auto;
+	}
+	.sectionLandDElse {
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-top: 10px;
+		padding-left: 0px;
+	}
+	.LandDElse {
+		color: #666666;
+		float: left;
+	}
+	.LandDElse.Datee {
+		margin-right: 0px;
+		float: none;
+	}
+	.LandDElse.Occupp {
+		margin-right: 0px;
+		float: none;
+	}
+	.LandDElse.ItemView {
+		float: none;
+	}
+	.sectionLandDCheck {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.moreButton {
+		height: 40px;
+		line-height: 40px;
+		width: 150px;
+		margin-top: 25px;
+	}
+	.sectionDistrictSub.left {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.sectionDistrictSub.right {
+		width: 80%;
+		margin-left: 10%;
+	}
+	.sectionDistrictTablist {
+		display: inline-block;
+		width: 100%;
+	}
+	.sectionDistrictSub.sporadic {
+		display: none;
+	}
+	.sectionDistrictTabmenu {
+		width: 80%;
+		margin-left: 10%;
+		float: left;
+		margin-bottom: 15px;
+	}
+	.sectionDistrictTabLabel {
+		text-align: left;
+		float: left;
+		margin-right: 5%;
+		cursor: pointer;
+	}
+	.sectionDistrictTabContent {
+		height: 360px;
+		width: 80%;
+		margin-left: 10%;
+	}
+	.sectionDistrictTabScroll {
+		height: 270px;
+		width: 100%;
+		overflow: scroll;
+	}
+	.sectionDistrictLWrap {
+		width: 80%;
+		margin-left: 10%;
+	}
+	.sectionDistrictLWrap.left {
+		margin-right: 0px;
+	}
+	.sectionDistrictLItem {
+		height: 16px;
+		line-height: 16px;
+		color: #333333;
+		margin-bottom: 18px;
+		text-align: left;
+	}
+	.sectionDistrictLItem.title {
+		float: left;
+		width: 70%;
+	}
+	.sectionDistrictLItem.date {
+		float: left;
+		width: 30%;
+		text-align: right;
+	}
+	.sectionDistrictREle.above {
+		margin-top: 0px;
+	}
+	.sectionDistrictRPic {
+		float: none;
+		height: auto;
+		width: 100%;
+	}
+	.sectionDistrictRDetail {
+		float: left;
+		width: 100%;
+	}
+	.sectionDistrictRDTitle {
+		color: #333333;
+		text-align: left;
+		margin-top: 5px;
+	}
+	.sectionDistrictRDAddress {
+		color: #666666;
+		margin-top: 15px;
+		text-align: left;
+	}
+	.sectionDistrictRDTel {
+		color: #666666;
+		margin-top: 5px;
+		text-align: left;
+	}
+	.pageBanner {
+		height: auto;
+		width: 100%;
+	}
+	.sectionBrainEle {
+		height: 60%;
+		width: 35%;
+		float: left;
+		margin-left: 10%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.sectionBrainElePic {
+		height: auto;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.sectionResourceEle {
+		width: 44%;
+		height: 35%;
+		margin-left: 4%;
+	}
+}
+
+
+/*Normal Mobile Screen*/
+
+@media screen and (max-width: 600px) {
+	.textA {
+		font-size: 1.000em;
+	}
+	.textB {
+		font-size: 1.125em;
+	}
+	.textC {
+		font-size: 0.850em;
+	}
+	.textD {
+		font-size: 0.875em;
+	}
+	.textE {
+		font-size: 0.75em;
+	}
+	/*homePage:header&section&footer*/
+	.header {
+		height: 80px;
+	}
+	.headerCtrl {
+		height: 80px;
+	}
+	.headerCover {
+		margin-top: 10px;
+		height: 30px;
+		width: 100%;
+		line-height: 30px;
+		padding: 0 0;
+	}
+	.logo {
+		left: 10%;
+		margin-left: 0;
+	}
+	.headerLogin {
+		right: 10%;
+	}
+	.header-right {
+		margin-left: 0px;
+		top: 40px;
+		height: 40px;
+	}
+	.top-menu {
+		height: 100%;
+		margin-top: 0px;
+		position: relative;
+		text-align: center;
+	}
+	.top-menu ul {
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+		margin-bottom: 0px;
+	}
+	.top-menu ul li {
+		display: inline-block;
+		margin: 0em 6% 0em;
+	}
+	.top-menu ul li a {
+		text-decoration: none;
+		color: #666666;
+		text-transform: uppercase;
+		font-weight: 500;
+		width: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-bottom: 3px solid transparent;
+	}
+	.top-menu ul li a.active {
+		border-bottom: 3px solid #666666;
+		color: #333333;
+	}
+	.top-menu ul li a:hover {
+		border-bottom: 3px solid #666666;
+		color: #333333;
+	}
+	.homePageContent {
+		margin-top: 80px;
+	}
+	.sectionWControl {
+		width: 100%;
+		text-align: center;
+	}
+	.sectionTitle {
+		text-align: left;
+		margin-left: 10%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.moreButton {
+		height: 30px;
+		line-height: 30px;
+		width: 150px;
+		margin-top: 20px;
+	}
+	.widthControl.footerCtrl {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	/*main:sectionCompetition&sectionStock&sectionResource&sectionDistrict*/
+	.pogoSlider {
+		height: 220px;
+	}
+	.sectionCompetitionEle {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 0;
+		margin-bottom: 15px;
+		height: 90%;
+	}
+	.sectionCompetitionElePic {
+		height: auto;
+	}
+	.sectionCompetitionEleState {
+		color: white;
+		text-align: center;
+		line-height: 35px;
+		margin-top: 0px;
+	}
+	.sectionStockEle {
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 15px;
+	}
+	.sectionStockEle.above {
+		margin-bottom: 15px;
+	}
+	#sectionStockClear {
+		display: inline-block;
+	}
+	.sectionStockETitle {
+		text-align: left;
+	}
+	.sectionStockEIntro {
+		text-align: left;
+	}
+	.sectionStockEInvester {
+		text-align: left;
+	}
+	.sectionStockEMember {
+		text-align: left;
+	}
+	.sectionResourceEle {
+		width: 41%;
+		margin-left: 6%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+		background-position: center;
+	}
+	.sectionResourceEle.above {
+		margin-bottom: 15px;
+	}
+	/*stockInvest:sectionBrain&sectionInvester*/
+	.pageBanner {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.sectionBrainEle {
+		height: 60%;
+		width: 35%;
+		float: left;
+		margin-left: 10%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.sectionBrainElePic {
+		height: auto;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.sectionInvesterEle {
+		margin-left: 10%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+		width: 80%;
+	}
+	.sectionInvesterEle.abovee {
+		margin-bottom: 15px;
+	}
+	.sectionInvesterDName {
+		margin-bottom: 5px;
+	}
+	.sectionInvesterDCorp {
+		margin-bottom: 5px;
+	}
+	.sectionInvesterDGenre {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	/*resourceService:sectionResource&sectionFacilitator&sectionEnterprise&sectionPartner*/
+	.sectionResourceEle {
+		width: 41%;
+		height: 41%;
+		margin-left: 6%;
+	}
+	.sectionFacilitatorEle {
+		width: 80%;
+		height: auto;
+		margin-left: 10%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.sectionEnterpriseEle {
+		width: 80%;
+		height: auto;
+		margin-left: 10%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.sectionPartnerEle {
+		width: 41%;
+		height: 160px;
+		margin-left: 6%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+}
+
+
+/*Small Mobile Screen*/
+
+@media screen and (max-width: 450px) {
+	.textA {
+		font-size: 0.900em;
+	}
+	.textB {
+		font-size: 1.125em;
+	}
+	.textC {
+		font-size: 0.600em;
+	}
+	.textD {
+		font-size: 0.875em;
+	}
+	.textE {
+		font-size: 0.75em;
+	}
+	.top-menu ul li {
+		margin: 0em 4% 0em;
+	}
+	.sectionInvesterEle {
+		text-align: center;
+		height: auto;
+	}
+	.sectionInvesterElePic {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5px;
+		float: none;
+	}
+	.sectionInvesterDetail {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.sectionInvesterDName {
+		float: none;
+	}
+	.sectionInvesterDCorp {
+		float: none;
+	}
+}
+
+
+/*Tiny Mobile Screen*/
+
+@media screen and (max-width: 350px) {
+	.textA {
+		font-size: 0.700em;
+	}
+	.textB {
+		font-size: 1.125em;
+	}
+	.textC {
+		font-size: 0.500em;
+	}
+	.textD {
+		font-size: 0.875em;
+	}
+	.textE {
+		font-size: 0.75em;
+	}
+	.footer {
+		padding: 1em 0;
+	}
+	.top-menu ul li {
+		margin: 0em 2% 0em;
+	}
+	.top-menu ul li a:hover {
+		border-bottom: 2px solid #666666;
+	}
+	.top-menu ul li a.active {
+		border-bottom: 2px solid #666666;
+	}
+	.top-menu ul li a {
+		padding: 7px 0px;
+		border-bottom: 2px solid transparent;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.sectionInvesterEle.abovee img {
+		float: none;
+	}
+}
+
+
+/*pending*/
+
+
+/*@media screen and (max-width: 1024px) {
+	.textA {
+		font-size: 1.500em;
+	}
+	.textB {
+		font-size: 1.125em;
+	}
+	.textC {
+		font-size: 1.000em;
+	}
+	.textD {
+		font-size: 0.875em;
+	}
+	.textE {
+		font-size: 0.75em;
+	}
+	.header {
+		padding: 0.5em 0;
+	}
+	.footer {
+		padding: 2em 0;
+	}
+}*/
+
+
+/*@media screen and (max-width: 800px) {
+	.textA {
+		font-size: 1.100em;
+	}
+	.textB {
+		font-size: 1.125em;
+	}
+	.textC {
+		font-size: 0.900em;
+	}
+	.textD {
+		font-size: 0.875em;
+	}
+	.textE {
+		font-size: 0.75em;
+	}
+	.header {
+		border-bottom: 3px solid #666666;
+		padding: 17px 0;
+	}
+	.top-menu {
+		width: 100%;
+		text-align: center;
+		background: #fff;
+		padding: 0;
+		margin-top: 10px;
+	}
+	.top-menu ul {
+		float: none;
+		width: 100%;
+	}
+	.top-menu ul li {
+		display: block;
+		float: none;
+	}
+	.top-menu ul li a {
+		border-bottom: 3px solid transparent;
+	}
+	.top-menu ul li a:hover {
+		border-bottom: 3px solid #666666;
+	}
+	.header-right {
+		width: 100%;
+	}
+}*/
+
+
+/*@media screen and (max-width: 768px) {}*/
+
+
+/*@media screen and (max-width: 640px) {
+	.textA {
+		font-size: 1.500em;
+	}
+	.textB {
+		font-size: 1.125em;
+	}
+	.textC {
+		font-size: 1.000em;
+	}
+	.textD {
+		font-size: 0.875em;
+	}
+	.textE {
+		font-size: 0.75em;
+	}
+	.footer {
+		padding: 1.5em 0;
+	}
+	.header {
+		padding: 15px 0;
+	}
+}*/

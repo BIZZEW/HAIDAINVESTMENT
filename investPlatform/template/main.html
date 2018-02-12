@@ -1,0 +1,184 @@
+<!--Author: ZHUHY-->
+
+<script src="js/jquery.pogo-slider.min.js"></script>
+<script src="js/main.js"></script>
+<div class="pogoSlider" id="js-main-slider">
+	<div class="naughtyEleWrap">
+		<div id="pogoSliderPic1" class="pogoSlider-slide" data-transition="horizentalSlide" data-duration="1000" style="background-image:url(images/pogoPic.jpg);">
+		</div>
+	</div>
+	<div class="naughtyEleWrap">
+		<div id="pogoSliderPic2" class="pogoSlider-slide" data-transition="horizentalSlide" data-duration="1000" style="background-image:url(images/pogoPic.jpg);">
+		</div>
+	</div>
+	<div class="naughtyEleWrap">
+		<div id="pogoSliderPic3" class="pogoSlider-slide" data-transition="horizentalSlide" data-duration="1000" style="background-image:url(images/pogoPic.jpg);">
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div id="sectionCompetition" class="sectionWControl">
+		<div class="sectionTitle textA">两赛一会</div>
+		<div id="sectionCompetitionEle1" class="sectionCompetitionEle">
+			<div class="naughtyEleWrap">
+				<img class="sectionCompetitionElePic" src="images/sectionCompetitionElePic1.jpg" />
+			</div>
+			<div class="sectionCompetitionEleState textC">我要报名</div>
+		</div>
+		<div id="sectionCompetitionEle2" class="sectionCompetitionEle">
+			<div class="naughtyEleWrap">
+				<img class="sectionCompetitionElePic" src="images/sectionCompetitionElePic2.jpg" /></div>
+			<div class="sectionCompetitionEleState textC">我要报名</div>
+		</div>
+		<div id="sectionCompetitionEle3" class="sectionCompetitionEle lastEle">
+			<div class="naughtyEleWrap">
+				<img class="sectionCompetitionElePic" src="images/sectionCompetitionElePic3.jpg" /></div>
+			<div class="sectionCompetitionEleState textC">活动未开始</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+</div>
+<!--Author: JINXY-->
+
+<div id="sectionStock" class="sectionWControl">
+	<div class="sectionTitle textA">股权投资</div>
+	<div class="sectionStock" ng-controller="stockEleCtrl" >
+					<div ng-repeat="obj in projects">
+						<div id="sectionStockEle" class="sectionStockEle above">
+							<div class="naughtyEleWrap">
+							<img class="sectionStockElePic " ng-src="{{obj.img}}" />
+							</div>
+							<div class="sectionStockETitle textC">{{obj.title}}</div>
+							<div class="sectionStockEIntro textD">{{obj.intro}}</div>
+							<div class="sectionStockEInvester textD">{{obj.invester}}</div>
+							<div class="sectionStockEMember textD">{{obj.member}}</div>
+						</div>
+					</div>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="moreButton textC" id="moreProject">
+		更多项目
+	</div>
+</div>
+
+<div class="section">
+	<div id="sectionResource" class="sectionWControl">
+		<div class="sectionTitle textA">资源服务</div>
+		
+		<div class="sectionResource" ng-controller="resourceCtrl" >
+					<div ng-repeat="obj in resources">
+						<div id="sectionResourceEle" class="sectionResourceEle above">
+							<div class="naughtyEleWrap">
+								<div class="sectionResourceWrap">
+									<img class="sectionResourceElePic" ng-src="{{obj.img}}" />
+									<div class="sectionResourceEleTitle textB">{{obj.title}}</div>
+									<div class="sectionResourceEleIntro textD">{{obj.intro}}</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="moreButton textC" id="moreService">
+			更多服务
+		</div>
+	</div>
+</div>
+
+<div id="sectionDistrict" class="sectionWControl">
+	<div class="sectionTitle textA">区县招商</div>
+	<!--sporadic section-->
+	<div class="sectionDistrictTablist">
+		<div class="sectionDistrictTabmenu">
+			<div class="sectionDistrictTabLabel textC" ui-sref=".sectionDistrictTab1">招商信息</div>
+			<div class="sectionDistrictTabLabel textC" ui-sref=".sectionDistrictTab2">创业园区</div>
+		</div>
+		<div class="sectionDistrictTabContent" ui-view="">
+		</div>
+	</div>
+	<div class="sectionDistrictSub sporadic left">
+		<div>
+			<div class="sectionDistrictSubTitle textB">招商信息</div>
+			<div class="sectionDistrictSubMore textE">更多</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="sectionDistrictLItem1">
+			<div class="sectionDistrictLItem textC title first">硅谷论剑 逐梦杭州</div>
+			<div class="sectionDistrictLItem textC date first">2016-10-08</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="sectionDistrictLItem2">
+			<div class="sectionDistrictLItem textC title">海外精英荟萃 梦想精彩绽放</div>
+			<div class="sectionDistrictLItem textC date">2016-10-08</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="sectionDistrictLItem3">
+			<div class="sectionDistrictLItem textC title">飘洋过海只求贤</div>
+			<div class="sectionDistrictLItem textC date">2016-05-23</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="sectionDistrictLItem4">
+			<div class="sectionDistrictLItem textC title">杭州赴美引才团圆满完成任务</div>
+			<div class="sectionDistrictLItem textC date">2016-05-18</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="sectionDistrictLItem5">
+			<div class="sectionDistrictLItem textC title">美南中国专家协会联合会杭州行</div>
+			<div class="sectionDistrictLItem textC date">2016-05-17</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="sectionDistrictLItem6">
+			<div class="sectionDistrictLItem textC title">中法青年企业家协会杭州考察活动</div>
+			<div class="sectionDistrictLItem textC date">2016-05-17</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="sectionDistrictLItem7">
+			<div class="sectionDistrictLItem textC title">中法青年企业家协会杭州行</div>
+			<div class="sectionDistrictLItem textC date">2016-05-13</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="sectionDistrictLItem8">
+			<div class="sectionDistrictLItem textC title">硅谷创业者联盟(SVACE)杭州行</div>
+			<div class="sectionDistrictLItem textC date">2016-05-11</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="sectionDistrictLItem9">
+			<div class="sectionDistrictLItem textC title">中法青年企业家协会杭州行</div>
+			<div class="sectionDistrictLItem textC date">2016-05-10</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div id="sectionDistrictLItem10">
+			<div class="sectionDistrictLItem textC title last">硅谷创业者联盟(SVACE)杭州行</div>
+			<div class="sectionDistrictLItem textC date last">2016-05-10</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+
+	<div class="sectionDistrictSub sporadic right">
+		<div>
+			<div class="sectionDistrictSubTitle textB">创业园区</div>
+			<div class="sectionDistrictSubMore textE">更多</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="sectionDistrictRWrap">
+			<div class="sectionDistrictREle above">
+				<img class="sectionDistrictRPic" src="images/sectionDistrictSubPic1.jpg" />
+				<div class="sectionDistrictRDetail">
+					<p class="sectionDistrictRDTitle textC">中国杭州留学人员高新区创业园</p>
+					<p class="sectionDistrictRDAddress textE">地址：杭州市滨江区江南大道100号行政中心5楼</p>
+					<p class="sectionDistrictRDTel textE">电话：0537-86794698</p>
+				</div>
+			</div>
+			<div class="sectionDistrictREle">
+				<img class="sectionDistrictRPic" src="images/sectionDistrictSubPic2.jpg" />
+				<div class="sectionDistrictRDetail">
+					<p class="sectionDistrictRDTitle textC">杭州市经济技术开发区留学人员创业区</p>
+					<p class="sectionDistrictRDAddress textE">地址：杭州市经济技术开发区学林街1288号</p>
+					<p class="sectionDistrictRDTel textE">电话：0537-86794698</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+</div>
